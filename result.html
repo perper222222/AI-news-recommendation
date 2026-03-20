@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>结果</title>
+</head>
+
+<body style="text-align:center; margin-top:50px; font-family:sans-serif;">
+
+  <h2>당신을 위한 뉴스 리스트</h2>
+
+  <img id="resultImage" src="" style="max-width:90%; height:auto;">
+
+  <script>
+    // 获取URL里的参数
+    var params = new URLSearchParams(window.location.search);
+    var seat = params.get("seat");
+
+    // 这里可以根据座位号控制不同图片（以后可以扩展）
+    document.getElementById("resultImage").src = "F1.jpeg";
+  </script>
+
+</body>
+</html>
